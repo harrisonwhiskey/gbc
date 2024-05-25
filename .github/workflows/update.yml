@@ -11,7 +11,11 @@ jobs:
       uses : actions/checkout@v2
       
     - name : Install Packages 
-      run : pip install pytest
+      run : |
+        pip install pytest
+        pip install torch torchvision torchaudio
       
     - name : Run tests 
-      run : pytest Assignment-1/ex1_test.py
+      run : |
+        pytest Assignment-1/ex1_test.py
+        pytest Assignment-3/regression_test.py
