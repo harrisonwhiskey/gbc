@@ -18,4 +18,7 @@ jobs:
     - name : Run tests 
       run : |
         pytest Assignment-1/ex1_test.py
+        pytest Assignment-2/numeric_derivation_test.py
+        pytest Assignment-2/rmse_test.py
+        pytest Assignment-2/tensor_multiplication_test.py
         pytest Assignment-3/regression_test.py
